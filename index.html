@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adarsh Children's Hospital</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f9ff;
+    color:#333;
+}
+
+/* NAVBAR */
+nav{
+    position:sticky;
+    top:0;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    z-index:1000;
+}
+
+nav img{ width:50px; }
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#007BFF;
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(rgba(0,123,255,0.75),rgba(0,123,255,0.75)),
+               url('images/5.jpeg');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+/* EMERGENCY */
+.emergency{
+    background:#ff4d4d;
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+}
+
+/* SECTION */
+section{
+    padding:70px 40px;
+    max-width:1200px;
+    margin:auto;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#007BFF;
+}
+
+/* ABOUT */
+.about p{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    line-height:1.7;
+}
+
+/* STATS */
+.stats{
+    background:linear-gradient(90deg,#007BFF,#00c6ff);
+    color:white;
+    padding:60px 20px;
+}
+
+.stats-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+    text-align:center;
+}
+
+.stat-box h3{
+    font-size:36px;
+}
+
+/* CARDS */
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.08);
+    text-align:center;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* TESTIMONIAL */
+.testimonial{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 12px rgba(0,0,0,0.08);
+    margin-bottom:20px;
+}
+
+/* FORM */
+form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input, textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    padding:12px;
+    background:#007BFF;
+    color:white;
+    border:none;
+    border-radius:8px;
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+}
+
+.btn{
+    display:inline-block;
+    margin:10px;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    color:white;
+}
+
+.call{background:#007BFF;}
+.whatsapp{background:#25D366;}
+.instagram{background:#E1306C;}
+.map-btn{background:#28a745;}
+
+/* MAP */
+.map iframe{
+    width:100%;
+    height:350px;
+    border-radius:10px;
+}
+
+/* FLOATING WHATSAPP */
+.floating-whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:18px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#e6f2ff;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <img src="logo.png">
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#doctor">Doctor</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <h1>Adarsh Children's Hospital</h1>
+    <p>कालः सर्वे विरोपयति (Time Heals Everything)</p>
+</div>
+
+<div class="emergency">
+🚨 Emergency Pediatric Care Available | Call 09081060635
+</div>
+
+<section id="about" class="about">
+<h2>About Us</h2>
+<p>
+A 24/7 children hospital providing comprehensive healthcare facility including advanced and specialized treatment in child centric environment. Located in Palitana, Bhavnagar, Gujarat.
+</p>
+</section>
+
+<section class="stats">
+<div class="stats-container">
+<div class="stat-box"><h3>5+</h3><p>Years Experience</p></div>
+<div class="stat-box"><h3>400+</h3><p>Happy Families</p></div>
+<div class="stat-box"><h3>24/7</h3><p>Pediatric Support</p></div>
+<div class="stat-box"><h3>Advanced</h3><p>Medical Equipment</p></div>
+</div>
+</section>
+
+<section id="doctor">
+<h2>Our Doctor</h2>
+<div class="card">
+<h3>Dr Nalin Dave and his Team</h3>
+<p>Dedicated Pediatric Care with 5 Years Experience</p>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Hospital Environment</h2>
+<div class="gallery">
+<img src="images/1.jpeg">
+<img src="images/2.jpeg">
+<img src="images/3.jpeg">
+<img src="images/4.jpeg">
+<img src="images/5.jpeg">
+<img src="images/6.jpeg">
+<img src="images/7.jpeg">
+</div>
+</section>
+
+<section>
+<h2>Book Appointment</h2>
+
+<p style="background:#ffe6e6;color:#cc0000;padding:15px;border-radius:8px;text-align:center;font-weight:600;max-width:700px;margin:0 auto 30px auto;">
+⚠ This appointment facility is temporarily not working.<br>
+Please contact hospital directly at 
+<a href="tel:09081060635" style="color:#cc0000;text-decoration:underline;">09081060635</a>
+</p>
+
+<form style="opacity:0.5;pointer-events:none;">
+<input type="text" placeholder="Parent Name">
+<input type="text" placeholder="Child Name">
+<input type="tel" placeholder="Phone Number">
+<input type="date">
+<textarea placeholder="Message"></textarea>
+<button type="submit">Submit Appointment</button>
+</form>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<p>Opening Hours: 10 AM – 8 PM</p>
+<p>Phone: 09081060635</p>
+
+<a class="btn call" href="tel:09081060635">Call</a>
+<a class="btn whatsapp" href="https://wa.me/919081060635">WhatsApp</a>
+<a class="btn instagram" href="https://instagram.com/adarsh_childrenhospital" target="_blank">Instagram</a>
+
+<br><br>
+
+<a class="btn map-btn" 
+href="https://www.google.com/maps?q=Adarsh+Children%27s+Hospital,+Mahavir+Plaza,+Near+Sanjivani+Hospital,+Bhairav+Para,+Palitana,+Gujarat+364270" 
+target="_blank">
+Open in Google Maps
+</a>
+
+<p style="margin-top:20px;">
+Adrsh Hospital, Mahavir Plaza, Near Sanjivani Hospital,<br>
+Bhairav Para, Palitana, Gujarat 364270
+</p>
+</section>
+
+<section class="map">
+<h2>Find Us</h2>
+<iframe src="https://www.google.com/maps?q=Adarsh+Children%27s+Hospital,+Mahavir+Plaza,+Near+Sanjivani+Hospital,+Bhairav+Para,+Palitana,+Gujarat+364270&output=embed"></iframe>
+</section>
+
+<footer>
+© 2026 Adarsh Children's Hospital | Palitana, Gujarat
+</footer>
+
+<a class="floating-whatsapp" href="https://wa.me/919081060635">💬</a>
+
+</body>
+</html>
